@@ -68,4 +68,4 @@ jobs:
           java -jar dlsync-src/build/libs/dlsync-*.jar \
             deploy \
             --script-root ${{ github.workspace }}/db_scripts \
-            --profile "$profile"
+            --profile "${{ secrets.SNOWFLAKE_PROFILE }}"
