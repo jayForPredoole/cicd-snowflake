@@ -41,8 +41,8 @@ jobs:
       - name: Run DLSync Test
         env:
           account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
-          user: ${{ secrets.SNOWFLAKE_USERNAME }}
-          password: ${{ secrets.SNOWFLAKE_PASSWORD }}
+          user: ${{ vars.SNOWFLAKE_USERNAME }}
+          password: ${{ vars.SNOWFLAKE_PASSWORD }}
           role: ${{ secrets.SNOWFLAKE_ROLE }}
           warehouse: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
           db: ${{ vars.SNOWFLAKE_DATABASE }}
