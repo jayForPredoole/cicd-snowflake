@@ -56,7 +56,7 @@ jobs:
 
       - name: Run DLSync Deploy
         env:
-          account: ${{ vars.SNOWFLAKE_ACCOUNT }}
+          account: ${{ secrets.SNOWFLAKE_ACCOUNT }}
           user: ${{ vars.SNOWFLAKE_USERNAME }}
           password: ${{ vars.SNOWFLAKE_PASSWORD }}
           role: ${{ secrets.SNOWFLAKE_ROLE }}
